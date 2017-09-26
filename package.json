@@ -1,7 +1,7 @@
 {
   "name": "burger",
   "version": "1.0.0",
-  "description": "",
+  "description": "Eat the burger",
   "main": "server.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
@@ -12,7 +12,7 @@
     "url": "git+https://github.com/bdoggincali/burger.git"
   },
   "keywords": [],
-  "author": "",
+  "author": "brian",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/bdoggincali/burger/issues"

@@ -52,8 +52,15 @@ li {
     /* border-top: 2px solid green; */
 }
 
+.deleteForm {
+    display: inline-block;
+    float: right;
+    padding-right: 20px;
+}
+
 .devourForm {
     display: inline-block;
     float: right;
-    padding-right: 40px;
+    padding-right: 10px;
 }
+

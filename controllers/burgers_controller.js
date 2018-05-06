@@ -18,13 +18,19 @@ router.get("/", function(req, res) {
 });
 
 router.post("/", function(req, res) {
-  burgers.create([
-    "burger_name", "devoured"
-  ], [
-    req.body.burger_name, req.body.devoured
-  ], function() {
+  if (req.body.burger_name.length > 0 && req.body.burger_name.length < 200) {
+    burgers.create([
+      "burger_name", "devoured"
+    ], [
+      req.body.burger_name, req.body.devoured
+    ], function() {
+      res.redirect("/");
+    });
+  }
+  else {
+    console.log("No name was entered or the name was too long!");
     res.redirect("/");
-  });
+  }
 });
 
 router.put("/:id", function(req, res) {
